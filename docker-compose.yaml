@@ -1,0 +1,9 @@
+version: '3'
+services:
+    php:
+        build: .
+        container_name: volume-issue
+        volumes:
+            - .:/var/task
+        command: php
+        tty: true
